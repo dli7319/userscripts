@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         JPDB review: Ctrl+z to undo.
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/dli7319/userscripts
 // @version      2024-03-31
 // @description  Ctrl+z to undo.
 // @author       You
@@ -12,8 +12,8 @@
 (function() {
     'use strict';
 
-    document.addEventListener("keypress", (event) => {
-        if (event.key == 'z' && event.ctrlKey) {
+    document.addEventListener("keydown", (event) => {
+        if (event.key == 'z' && (event.ctrlKey || event.metaKey)) {
             history.back();
         }
     });
