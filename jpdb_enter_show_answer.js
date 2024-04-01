@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         JPDB review: Press enter to show answer.
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/dli7319/userscripts
 // @version      2024-03-31
 // @description  Press enter to show answer.
 // @author       You
